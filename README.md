@@ -88,6 +88,22 @@ npm start
 
 3. Open your browser and navigate to `http://localhost:3000`
 
+## Running in docker
+
+1. Build the docker image:
+```bash
+docker build -t german-language-learning .
+
+# Run the docker container
+docker run -p 3000:3000 german-language-learning
+
+# Open your browser and navigate to # Open your browser and navigate to URL_ADDRESS:3000
+```
+2. Configuration
+- `ASSEMBLYAI_API_KEY`: Your AssemblyAI API key
+- `DEEPSEEK_API_KEY`: Your Deepseek AI API key
+- `PORT`: Port on which the server will run (optional, default is 3000)
+
 ## Usage
 
 1. Select a scenario from the available options on the home page
